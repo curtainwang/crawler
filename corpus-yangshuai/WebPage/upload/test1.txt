@@ -1,0 +1,8 @@
+在做一个PHP文件上传系统的时候，使用move_uploaded_file进行文件上传，提示下面两个warning，不能成功上传文件
+
+Warning: move_uploaded_file(upload/songshu_rgb.gif) [function.move-uploaded-file]: failed to open stream: No such file or directory in D:\www\2737\upload_file.phpon line 25
+
+Warning: move_uploaded_file() [function.move-uploaded-file]: Unable to move 'C:\WINDOWS\Temp\php80.tmp' to 'upload/songshu_rgb.gif' in D:\www\2737\upload_file.phpon line 25
+Stored in: upload/songshu_rgb.gif
+
+先前认为是目录权限不够的问题，查找资料后，其实是原因是文件找不到，如何解决呢？查找资料发现，应该使用绝对路径代替相对路径，原来的代码如下

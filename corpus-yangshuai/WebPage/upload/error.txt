@@ -1,0 +1,59 @@
+#include<iostream>
+using namespace std;
+
+struct bnode{
+	char data;
+	bnode *lchild,*rchild;
+};
+
+class tree{
+public:
+	tree();
+	~tree(){finish(root);};
+	void create_tree(){create_tree(root);};//创建一个二叉树
+	void preorder(){preorder(root);};
+	void inorder(){inorder(root);};
+	void postorder(){postorder(root);};
+	void finish(){finish(root)};
+private:
+	bnode *root;
+	void finish(){finish(bnode *T);};
+	void create_tree(bnode *&T);
+	void preorder(bnode *T);
+	void inorder(bnode *T);
+	void postorder(bnode *T);
+};
+
+
+void tree::create_tree(bnode *&T){//创建一个二叉树
+	char x;
+	cin>>x;
+	if(x=='0')T=NULL;
+	else{
+		T=new bnode;
+		T->data=x;
+		create_tree(T->lchild);
+		create_tree(T->rchild);
+	}
+}
+
+void tree::preorder(bnode *T){
+	if(T!=NULL){
+		cout<<T->data<<" ";
+		preorder(T->lchild);
+		preorder(T->rchild);
+	}
+}
+
+tree::~tree(bnode *T){
+
+}
+
+int main()
+{
+	tree t;
+	t.create_tree();
+	t.preorder();
+	cout<<endl;
+	return 0;
+}

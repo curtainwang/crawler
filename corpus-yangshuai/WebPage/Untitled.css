@@ -1,0 +1,432 @@
+
+body
+{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+
+#Mtitle
+{
+    width: inherit;
+    height: 50px;
+    margin-top: 50px;
+}
+#subMtitle
+{
+    width:400px;
+    height: 50px;
+    background-color: #66B27B;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    float: right;
+}
+#subMtitle table
+{
+	width:300px;
+    height: 50px;
+    margin-left:20px;
+	
+}
+#MtitleChar
+{
+	height: 40px;
+	width: 70px;
+	font-size: 20px;
+	color: #ffffff;
+	margin-left: 10px;
+	margin-top: 5px;
+	padding-top: 8px;
+	float: left;
+}
+
+#MtitleCharF
+{
+	height: 40px;
+	width: 70px;
+	font-size: 20px;
+	color: #66B27B;
+	margin-left: 10px;
+	margin-top: 5px;
+	padding-top: 8px;
+	vertical-align:middle;
+	float: left;
+	background: #ffffff;
+}
+#MtitleChar a:LINK
+{
+	color: #ffffff;
+	TEXT-DECORATION: none
+}
+#MtitleChar a:VISITED
+{
+	color: #ffffff;
+	TEXT-DECORATION: none
+}
+#MtitleChar a:HOVER
+{
+	color: #ffffff;
+	TEXT-DECORATION: none
+}
+#MtitleCharF a:LINK
+{
+	color: #66B27B;
+	TEXT-DECORATION: none
+}
+#MtitleCharF a:VISITED
+{
+	color: #66B27B;
+	TEXT-DECORATION: none
+}
+#MtitleCharF a:HOVER
+{
+	color: #66B27B;
+	TEXT-DECORATION: none
+}
+
+
+/*
+Untitled.html.php页面
+*/
+#Mbackground
+{
+	margin-top: 10px;
+    width: 100%;
+    height: 500px;
+    background-image: url(pic/background2.jpg);
+}
+
+#upLoadFile
+{
+	position: absolute;
+	margin-top:250px;
+	margin-left:500px;
+	width: 400px;
+	height: 50px;
+	
+}
+
+#uploadFileTxt
+{ 
+	width: 250px;
+	height: 32px;
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    background: transparent;
+    float: left;
+} 
+#uploadFileLookBtn
+{
+   	height: 32px; 
+	width: 70px;
+	background: transparent;
+	border: 3px solid #ffffff;
+    float: left;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
+	 
+} 
+#uploadFileFile
+{
+	position: absolute; 
+    top: 0px;
+    left: 0px;
+    filter: alpha(opacity:0);   
+    opacity: 0;
+    width: 325px;
+    height: 32px;
+    border: 1px solid red;
+} 
+
+#uploadFileBtn
+{
+	height: 32px; 
+	width: 70px;
+	background: transparent;
+	border: 3px solid #FFFFFF;
+    float: right;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+/*
+selectTraining.html.php页面
+*/
+#traningSetF
+{
+	width: 100%;
+    height: 500px;
+    margin-top:10px;
+}
+#selectTraningSet
+{
+    width: 28.9%;
+    height: 500px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #66B27B;
+   /* background:  url(pic/column.jpg);*/
+    float: left;
+}
+#traningSetWord
+{
+    width: 60%;
+    height: 40%;
+    margin-left: 20%;
+    margin-top: 20%;
+    background:  url(pic/word.jpg);
+}
+#traningSetSelect
+{
+    width: 200px;
+    height: 32px;
+    margin-left: 20%;
+    background: url(pic/arrow.png) no-repeat scroll right center transparent;
+    border-top: 3px solid #CDCDCD;
+    border-bottom: 3px solid #CDCDCD;
+    border-left: 3px solid #CDCDCD;
+    border-right: 0px solid;
+    float: left;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+#selectTraningSet input
+{
+    width: 50px;
+    height: 32px;
+    float: left;
+    background: transparent;
+    border: 3px solid #ffffff;
+}
+#traningSetS
+{
+	width: 70%;
+    height: 500px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left:5px;
+    float: right;	
+    background-color: #66B27B;
+}
+#traningSetSS
+{
+	width: 90%;
+    height: 400px;
+    margin-top: 50px;
+    margin-left:5%;
+    background-color: #ffffff;
+}
+#ShowTraningSet
+{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid #CCCCCC;
+
+}
+#traningSetT
+{
+	width: 100%;
+    height: 30px;
+    margin-top: 5px;
+}
+#footerBtn
+{
+    width: auto;
+    height: 25px;
+    border: 3px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+}
+#footerSkipPage
+{
+    width: 40px;
+    height: 20px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background: url(pic/arrow.png) no-repeat scroll right center transparent;
+
+}
+#pageFooter
+{
+	width:auto;
+	height: 30px;
+	margin-top:5px;
+	float: right;
+}
+
+/*homePage.html.php页面*/
+#homebackground
+{
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+    background-image: url(pic/homebackground1.jpg);
+}
+
+#homeRightFrame
+{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    border: 1px solid #C4DF9B;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #C4DF9B;
+    margin-top: 8%;
+    margin-left: 50%;
+
+}
+
+#homeRightFrameTitle
+{
+    width: 100%;
+    height: 10%;
+    border-bottom: 5px solid #65B27A;
+
+}
+#homeRightFrameTitle label
+{
+    position: absolute;
+    font-size: large;
+    font-weight: bold;
+    color: #15483B;
+    margin-top: 5%;
+}
+#homeRightFrameTitleMain
+{
+    position: absolute;
+    width: 90%;
+    margin-top:5%;
+    margin-left:3%;
+    margin-right: 10%;
+}
+#homeRightFrameContent
+{
+    font-size: large;
+    margin-top: 4%;
+    border-bottom: 1px solid #65B27A;
+    color: #15483B;
+}
+
+/*judgement.html.php*/
+#judgeBackground
+{
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    /*background-color: #65B27A;*/
+
+}
+#judgeBackgroundLeft
+{
+    width: 70%;
+    height: 100%;
+    background-color: #65B27A;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    float:left;
+}
+#judgeBackgroundRight
+{
+    width: 28.9%;
+    height: 500px;
+    background-color: #65B27A;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    float: right;
+    background-image:  url(pic/judgementback.jpg);
+}
+#judgeBackgroundLeftEdit
+{
+    width: 350px;
+    height: 450px;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+#judgeUpLoadFile
+{
+    position: absolute;
+    width: 300px;
+    height: 32px;
+    background-color: #65B27A;
+}
+
+#judgeUploadFileTxt
+{
+    width: 150px;
+    height: 32px;
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    background: transparent;
+    float: left;
+}
+#judgeUploadFileLookBtn
+{
+    height: 32px;
+    width: 70px;
+    background: transparent;
+    border: 3px solid #ffffff;
+    float: left;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffffff;
+
+}
+#judgeUploadFileFile
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    filter: alpha(opacity:0);
+    opacity: 0;
+    width: 225px;
+    height: 32px;
+    border: 1px solid red;
+}
+
+#judgeUploadFileBtn
+{
+    height: 32px;
+    width: 70px;
+    background: transparent;
+    border: 3px solid #FFFFFF;
+    float: right;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #ffffff;
+}
+#judgeShowFile
+{
+    width: 300px;
+    height: 400px;
+    margin-top: 10%;
+    background-color: #C4DF9B;
+
+}
+
+#judgeShowFileDis
+{
+    width: 300px;
+    height: 10px;
+}
+#judgeShowFileContent
+{
+    font-size: large;
+    margin-top: 5%;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-bottom: 1px solid #65B27A;
+    color: #15483B;
+}

@@ -1,0 +1,2 @@
+　　SourceDNA核实后发现 “appleIDClientIdentifier:”的值并非邮件地址。但我们也认为这不是一串随机的数字。看起来这应该是与AppleID关联的一串数值。
+　　有米承认SDK中包含私有API，同时表示正开发不包括私有API的SDK。

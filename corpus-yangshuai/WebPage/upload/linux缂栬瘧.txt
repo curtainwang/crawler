@@ -1,0 +1,25 @@
+1、调用静态链接库生成动态链接库的方法：
+gcc MakeSignature.c -Wall -I ./_openssl_linux_/include -L ./ -lcrypto -lssl -fPIC -shared -o MakeSignature.so
+
+2、查看链接库内部没有定义的情况（对目标对象和函数执行重新部署，并报告缺少的目标对象和函数(只对ELF格式适用)）
+ldd -r MakeSignature.so
+
+3、编译C程序
+gcc -o call_make_signature call_make_signature.c MakeSignature.so -ldl
+
+4、查看生成结果
+./call_make_signature
+
+
+6、Linux 编译openssl
+./config shared -fPIC 
+make
+
+7、Windows 编译openssl
+> perl Configure VC-WIN32 no-asm 
+> ms\do_ms
+> nmake -f ms\nt.mak
+> nmake -f ms\nt.mak install
+
+
+

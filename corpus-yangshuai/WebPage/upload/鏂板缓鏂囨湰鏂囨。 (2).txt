@@ -1,0 +1,3 @@
+select count(*) from result where Result_Category='Art' and Result_Test_cg='Art'
+
+select count(*) from result where Result_Test_cg='Art'

@@ -1,0 +1,97 @@
+
+	//-------------------------------Train：Sport--------------------------------
+	for($i=1;$i<=301;$i++){
+    	$filename = "library/train/Sport/$i.txt";
+		$handle = fopen($filename, "r");//读取二进制文件时，需要将第二个参数设置成'rb'
+    
+          //通过filesize获得文件大小，将整个文件一下子读到一个字符串中
+        $contents = fread($handle, filesize ($filename));
+        fclose($handle);
+		//iconv('GBK','utf-8',$contens);
+		$contents=iconv("GB2312", "UTF-8", $contents);
+		$sql = "insert into train (Train_Idnum,Train_Category,Train_Cg_Id,Train_Text) VALUES(NULL,'Sport','$i','$contents')";
+		mysql_query($sql) or die(mysql_error());
+	}
+	//-------------------------------Train：Sport--------------------------------
+	
+	
+	
+	
+	//-------------------------------Train：Traffic------------------------------
+	for($i=1;$i<=125;$i++){
+    	$filename = "library/train/Traffic/$i.txt";
+		$handle = fopen($filename, "r");//读取二进制文件时，需要将第二个参数设置成'rb'
+    
+          //通过filesize获得文件大小，将整个文件一下子读到一个字符串中
+        $contents = fread($handle, filesize ($filename));
+        fclose($handle);
+		$contents=iconv("GB2312", "UTF-8", $contents);
+		$sql = "insert into train (Train_Idnum,Train_Category,Train_Cg_Id,Train_Text) VALUES(NULL,'Traffic','$i','$contents')";
+		mysql_query($sql) or die(mysql_error());
+	}
+	//-------------------------------Train：Traffic------------------------------
+	
+	//-------------------------------Train：Environment---------------------------
+	for($i=1;$i<=125;$i++){
+		$filename = "library/train/Environment/$i.txt";
+		$handle = fopen($filename, "r");//读取二进制文件时，需要将第二个参数设置成'rb'
+		
+		//通过filesize获得文件大小，将整个文件一下子读到一个字符串中
+		$contents = fread($handle, filesize ($filename));
+		fclose($handle);
+		$contents=iconv("GB2312", "UTF-8", $contents);
+		$sql = "insert into train (Train_Idnum,Train_Category,Train_Cg_Id,Train_Text) VALUES(NULL,'Environment',$i,'$contents')";
+		mysql_query($sql) or die(mysql_error());
+	}
+	//-------------------------------Train：Environment---------------------------
+	
+	
+	
+	//-------------------------------Train：Education-----------------------------
+	for($i=1;$i<=141;$i++){
+    	$filename = "library/train/Education/$i.txt";
+		$handle = fopen($filename, "r");//读取二进制文件时，需要将第二个参数设置成'rb'
+    
+        //通过filesize获得文件大小，将整个文件一下子读到一个字符串中
+        $contents = fread($handle, filesize ($filename));
+        fclose($handle);
+		$contents=iconv("GB2312", "UTF-8", $contents);
+		$sql = "insert into train (Train_Idnum,Train_Category,Train_Cg_Id,Train_Text) VALUES(NULL,'Education','$i','$contents')";
+		mysql_query($sql) or die(mysql_error());
+	}
+	//-------------------------------Train：Education-----------------------------
+	
+	
+	
+	//-------------------------------Train：Medicine------------------------------
+	for($i=1;$i<=133;$i++){
+    	$filename = "library/train/Medicine/$i.txt";
+		$handle = fopen($filename, "r");//读取二进制文件时，需要将第二个参数设置成'rb'
+    
+          //通过filesize获得文件大小，将整个文件一下子读到一个字符串中
+        $contents = fread($handle, filesize ($filename));
+        fclose($handle);
+		$contents=iconv("GB2312", "UTF-8", $contents);
+		$sql = "insert into train (Train_Idnum,Train_Category,Train_Cg_Id,Train_Text) VALUES(NULL,'Medicine','$i','$contents')";
+		mysql_query($sql) or die(mysql_error());
+	}
+	//-------------------------------Train：Medicine------------------------------
+	
+	
+	
+	//-------------------------------Train：Military------------------------------
+	for($i=1;$i<=157;$i++){
+    	$filename = "library/train/Military/$i.txt";
+		$handle = fopen($filename, "r");//读取二进制文件时，需要将第二个参数设置成'rb'
+    
+         //通过filesize获得文件大小，将整个文件一下子读到一个字符串中
+        $contents = fread($handle, filesize ($filename));
+        fclose($handle);
+		$contents=iconv("GB2312", "UTF-8", $contents);
+		$sql = "insert into train (Train_Idnum,Train_Category,Train_Cg_Id,Train_Text) VALUES(NULL,'Military','$i','$contents')";
+		mysql_query($sql) or die(mysql_error());
+	}
+	//-------------------------------Train：Military------------------------------
+	
+	
+	

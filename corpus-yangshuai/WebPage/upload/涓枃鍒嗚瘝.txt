@@ -1,0 +1,21 @@
+
+1、phpanalysis2.0 中文分词
+
+使用方法：
+http://www.phpbone.com/phpanalysis/  函数的用法
+可参照D:\Program Files\wamp\wamp\www\phpanalysis2.0\demo.php
+
+一个完整的分词过程：
+require_once 'D:/Program Files/wamp/wamp/www/phpanalysis2.0/phpanalysis.class.php';
+$pa = new PhpAnalysis();
+$pa->SetSource('需要进行分词的字符串');   
+$pa->resultType = 2;      // 生成的分词结果数据类型(1 为全部， 2为 词典词汇及单个中日韩简繁字符及英文， 3 为词典词汇及英文) 这个变量一般用 SetResultType( $rstype ) 这方法进行设置。
+
+$pa->differMax  = true;   //使用最大切分模式对二元词进行消岐
+$pa->StartAnalysis();
+$arrIndex = $pa->GetFinallyIndex();   //得到 含有词频 的结果 键值对的形式
+$arrSimple = $pa->GetSimpleResult();  //得到以 字母和符号 作为分界线的半句 键值对的形式
+$arrResult = $pa->GetFinallyResult($spword=' ')  //得到 以空格作为分界线 的句子 字符串的形式
+
+
+给出的文字编码格式只能是 utf-8、gb18030、big5
